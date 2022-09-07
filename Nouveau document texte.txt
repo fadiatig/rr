@@ -1,0 +1,25 @@
+
+procedure_insertionSort(var arr[], var n) 
+
+    var i, key, j: integer;
+BEGIN 
+    for (i = 1; i < n; i++)
+     
+        key = arr[i]; 
+        j = i - 1; 
+        while (j >= 0 && arr[j] > key)
+         
+            arr[j + 1] = arr[j]; 
+            j = j - 1; 
+        
+        arr[j + 1] = key; 
+END
+    
+BEGIN
+
+    var tab: ARRRAY_OF_INTEGER [n]; 
+    var n :integer; 
+    insertionSort(tab, n); 
+END 
+    
+  
